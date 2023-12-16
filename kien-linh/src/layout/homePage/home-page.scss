@@ -1,0 +1,67 @@
+.home-page {
+  height: 100vh;
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10%;
+    padding-bottom: 20%;
+  }
+
+  &__title {
+    .invitation {
+      font-size: $h6-font-size;
+      line-height: 28px;
+      letter-spacing: 1px;
+      font-weight: $font-semibold;
+      margin-bottom: 12px;
+    }
+
+    .protagonist-name {
+      font-family: "Great", "Roboto", Arial, Helvetica, sans-serif;
+      font-size: $h2-font-size;
+      font-weight: $font-light;
+      letter-spacing: 2px;
+      line-height: 40px;
+      margin-top: 4px;
+    }
+  }
+
+  &__button {
+    font-family: "Playfair", "Great", "Roboto", Arial, Helvetica, sans-serif !important;
+    font-size: 16px;
+    font-weight: $font-regular;
+    line-height: 24px;
+    color: $white;
+
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    justify-content: center;
+
+    padding: 8px 32px 10px;
+    width: fit-content;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 9999px;
+    background-color: rgba(120, 120, 120, 1);
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: rgba(147, 147, 147, 1);
+    }
+
+    .icon {
+      display: block;
+      width: 26px;
+      height: 26px;
+      -webkit-mask: url("../../assets/icon/card_open.svg") no-repeat center;
+      mask: url("../../assets/icon/card_open.svg") no-repeat center;
+      background-color: $white;
+    }
+  }
+}
