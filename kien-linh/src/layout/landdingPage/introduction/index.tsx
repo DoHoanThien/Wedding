@@ -1,18 +1,10 @@
-import Image from "next/image";
 import React, { memo } from "react";
-import logoBG from "@/assets/logo/logo-BG.png";
 
 const Introduction = () => {
   return (
     <section id="introduction" className="introduction">
       <div className="introduction__content">
-        <Image
-          src={logoBG}
-          className="logo-bg"
-          width={300}
-          height={100}
-          alt=""
-        ></Image>
+        <div className="logo-bg"></div>
         <div className="speech" data-aos="fade-down-right">
           <p className="speech__text">
             Lần đầu gặp em anh nghĩ
