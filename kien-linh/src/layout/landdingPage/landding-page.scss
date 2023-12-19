@@ -1,5 +1,73 @@
 .landding-page {
+  padding: 0 20px;
+
   .banner {
+    position: relative;
     height: 100vh;
+
+    .banner-wrapper {
+      position: absolute;
+      width: 100%;
+      top: 16%;
+    }
+
+    &__content {
+      text-align: left;
+
+      &--title {
+        font-family: "Dancing", Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36px;
+      }
+
+      &--name {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 40px;
+        margin: 20px 0;
+      }
+
+      &--date {
+        text-transform: uppercase;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 2px;
+        tab-size: 4;
+      }
+    }
+
+    &__button {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid $black;
+      margin: 0 auto;
+      margin-top: 32px;
+      animation: bounce 1s infinite;
+
+      .icon {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: $black;
+        -webkit-mask: url("../../assets/icon/down-double.svg") no-repeat center;
+        mask: url("../../assets/icon/down-double.svg") no-repeat center;
+      }
+    }
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
   }
 }

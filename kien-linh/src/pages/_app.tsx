@@ -11,7 +11,8 @@ export default function App({ Component, pageProps }: AppProps) {
     AOS.init({
       easing: "ease-out-cubic",
       once: true,
-      offset: 120
+      offset: 200,
+      duration: 2000
     });
   }, []);
 

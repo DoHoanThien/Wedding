@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import SliderBanner from "./banner";
+import Banner from "./banner";
 import Introduction from "./introduction";
 import Yourself from "./yourself";
 import Countdown from "./countdown";
@@ -11,7 +11,7 @@ type propTypes = {};
 const LanddingPage = (props: propTypes) => {
   return (
     <div className="landding-page">
-      <SliderBanner />
+      <Banner />
       <Introduction />
       <Yourself />
       <Countdown />
