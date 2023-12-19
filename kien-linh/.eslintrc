@@ -57,13 +57,6 @@
         "tsx": "never"
       }
     ],
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "extensions": [".js", ".jsx", ".ts", ".tsx"]
-        }
-      }
-    },
     "arrow-body-style": 0,
     "no-continue": 0,
     "@typescript-eslint/no-empty-function": 0,
