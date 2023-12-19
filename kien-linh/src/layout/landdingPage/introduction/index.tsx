@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { memo } from "react";
-import logoBG from "../../../assets/logo/logo-BG.png";
+import logoBG from "@/assets/logo/logo-BG.png";
 
 const Introduction = () => {
   return (
