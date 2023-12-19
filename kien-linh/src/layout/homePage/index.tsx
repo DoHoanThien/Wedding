@@ -9,7 +9,22 @@ const HomePage = (props: propTypes) => {
 
   return (
     <div className="home-page">
-      <div className="container">
+      <div className="container" style={{ position: "relative" }}>
+        {/* demo */}
+        <p
+          style={{
+            position: "absolute",
+            width: "100%",
+            top: "50%",
+            textAlign: "center",
+            fontSize: "32px",
+            opacity: "0.5"
+          }}
+        >
+          Background 01 1tấm desktop, 1tấm mobile
+        </p>
+        {/* demo */}
+
         <div
           className="home-page__title"
           data-aos="zoom-out"

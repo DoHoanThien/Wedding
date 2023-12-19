@@ -24,6 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name="viewport"
           content="initial-scale=1.0, width=device-width"
         />
+        <title>Kiên Linh Wedding</title>
       </Head>
       <Component {...pageProps} />
     </>
