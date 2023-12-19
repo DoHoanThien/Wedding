@@ -1,8 +1,6 @@
 import React, { memo } from "react";
 
-type propTypes = {};
-
-const Yourself = (props: propTypes) => {
+const Yourself = () => {
   return <section className="yourself">Yourself</section>;
 };
 

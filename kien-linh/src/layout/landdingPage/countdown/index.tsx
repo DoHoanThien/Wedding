@@ -1,8 +1,6 @@
 import React, { memo } from "react";
 
-type propTypes = {};
-
-const Countdown = (props: propTypes) => {
+const Countdown = () => {
   return <section className="countdown">Countdown</section>;
 };
 

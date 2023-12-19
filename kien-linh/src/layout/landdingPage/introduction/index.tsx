@@ -1,8 +1,6 @@
 import React, { memo } from "react";
 
-type propTypes = {};
-
-const Introduction = (props: propTypes) => {
+const Introduction = () => {
   return <section className="introduction">Introduction</section>;
 };
 

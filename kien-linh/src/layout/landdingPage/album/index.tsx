@@ -1,8 +1,6 @@
 import React, { memo } from "react";
 
-type propTypes = {};
-
-const Album = (props: propTypes) => {
+const Album = () => {
   return <section className="album">Album</section>;
 };
 

@@ -1,9 +1,7 @@
 import React, { memo } from "react";
 import Typewriter from "typewriter-effect";
 
-type propTypes = {};
-
-const Banner = (props: propTypes) => {
+const Banner = () => {
   return (
     <div className="banner">
       <div className="banner-wrapper">

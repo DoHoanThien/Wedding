@@ -10,7 +10,7 @@ export default function Home() {
 
   const handleChangePage = useCallback(() => {
     page === PAGE[0] && setPage(PAGE[1]);
-  }, []);
+  }, [page]);
 
   return (
     <>

@@ -6,9 +6,7 @@ import Countdown from "./countdown";
 import Album from "./album";
 import Other from "./other";
 
-type propTypes = {};
-
-const LanddingPage = (props: propTypes) => {
+const LanddingPage = () => {
   return (
     <div className="landding-page">
       <Banner />

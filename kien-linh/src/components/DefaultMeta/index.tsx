@@ -1,4 +1,4 @@
-import { FC, memo } from "react";
+import { memo } from "react";
 import Head from "next/head";
 
 const MIN_WIDTH_PAGE = 500;

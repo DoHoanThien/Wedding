@@ -1,8 +1,6 @@
 import React, { memo } from "react";
 
-type propTypes = {};
-
-const Other = (props: propTypes) => {
+const Other = () => {
   return <section className="other">Other</section>;
 };
 
