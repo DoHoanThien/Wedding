@@ -20,13 +20,6 @@ body {
   font-weight: $font-regular;
   font-size: $font-size-normal;
   text-align: center;
-
-  min-height: fill-available;
-  min-height: -webkit-fill-available;
-}
-
-body {
-  min-height: 100vh;
 }
 
 a {
