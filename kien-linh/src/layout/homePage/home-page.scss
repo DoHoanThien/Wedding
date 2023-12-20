@@ -1,6 +1,6 @@
 .home-page {
   height: 100vh;
-  min-height: -webkit-fill-available;
+  height: var(--window-height);
 
   .container {
     width: 100%;

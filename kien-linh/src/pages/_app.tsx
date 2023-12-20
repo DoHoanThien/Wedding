@@ -14,6 +14,13 @@ export default function App({ Component, pageProps }: AppProps) {
       offset: 200,
       duration: 2000
     });
+
+    const windowHeight = () => {
+      const doc = document.documentElement;
+      doc.style.setProperty("--window-height", `${window.innerHeight}px`);
+    };
+    window.addEventListener("resize", windowHeight);
+    windowHeight();
   }, []);
 
   return (

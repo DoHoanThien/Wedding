@@ -6,7 +6,7 @@
   .banner {
     position: relative;
     height: 100vh;
-    min-height: -webkit-fill-available;
+    height: var(--window-height);
 
     .banner-wrapper {
       position: absolute;
