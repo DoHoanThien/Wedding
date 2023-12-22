@@ -5,21 +5,6 @@ import Typewriter from "typewriter-effect";
 const Banner = () => {
   return (
     <div className="banner" style={{ position: "relative" }}>
-      {/* demo */}
-      <p
-        style={{
-          position: "absolute",
-          width: "100%",
-          top: "50%",
-          textAlign: "center",
-          fontSize: "32px",
-          opacity: "0.5"
-        }}
-      >
-        Background 02 1tấm desktop, 1tấm mobile
-      </p>
-      {/* demo */}
-
       <div className="banner-wrapper">
         <div className="banner__content">
           <h6 className="banner__content--title" data-aos="fade-down-left">

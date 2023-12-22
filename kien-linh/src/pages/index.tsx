@@ -1,6 +1,4 @@
 import { useCallback, useState } from "react";
-
-import DefaultMeta from "@/components/DefaultMeta";
 import HomePage from "@/layout/homePage";
 import LanddingPage from "@/layout/landdingPage";
 import { PAGE } from "@/config/constants";
@@ -13,14 +11,9 @@ export default function Home() {
     window.scrollTo(0, 0);
   }, [page]);
 
-  return (
-    <>
-      <DefaultMeta />
-      {page === PAGE[0] ? (
-        <HomePage onChangePage={handleChangePage} />
-      ) : (
-        <LanddingPage />
-      )}
-    </>
+  return page === PAGE[0] ? (
+    <HomePage onChangePage={handleChangePage} />
+  ) : (
+    <LanddingPage />
   );
 }
