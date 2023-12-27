@@ -31,7 +31,7 @@ const Introduction = () => {
         </p>
         {/* demo */}
       </div>
-      <div className="introduction__logo-end"></div>
+      <div className="logo-end"></div>
     </section>
   );
 };

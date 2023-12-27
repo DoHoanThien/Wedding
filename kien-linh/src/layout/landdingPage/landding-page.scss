@@ -99,18 +99,8 @@
       border-radius: 1.5rem;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
-
-    &__logo-end {
-      width: 65%;
-      height: 20px;
-      margin: 10px auto;
-      background-color: rgba(109, 109, 109, 1);
-      -webkit-mask: url("../../../public/static/assets/images/logo-end-section.svg")
-        no-repeat center;
-      mask: url("../../../public/static/assets/images/logo-end-section.svg")
-        no-repeat center;
-    }
   }
+
   .yourself {
     display: flex;
     flex-direction: column;
@@ -329,5 +319,41 @@
         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
       }
     }
+  }
+
+  .album {
+    &__title {
+      font-family: "Cormorant", Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      color: rgba(109, 109, 109, 1);
+
+      text-transform: uppercase;
+    }
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      padding: 20px 0;
+
+      &__item {
+        height: 250px;
+        border-radius: 8px;
+        background-color: bisque;
+      }
+    }
+  }
+
+  .logo-end {
+    width: 65%;
+    height: 20px;
+    margin: 20px auto;
+    background-color: rgba(109, 109, 109, 1);
+    -webkit-mask: url("../../../public/static/assets/images/logo-end-section.svg")
+      no-repeat center;
+    mask: url("../../../public/static/assets/images/logo-end-section.svg")
+      no-repeat center;
   }
 }
