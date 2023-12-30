@@ -1,0 +1,46 @@
+.yourself {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+
+  &__groom,
+  &__bride {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &--image {
+      width: 50%;
+      height: 250px;
+      text-align: center;
+      background-color: bisque;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    &--name {
+      font-family: "Allura", Arial, Helvetica, sans-serif;
+      font-size: 48px;
+      font-weight: $font-regular;
+      line-height: 48px;
+      color: rgba(192, 175, 163, 1);
+    }
+
+    &--full-name {
+      font-size: 24px;
+      font-weight: $font-medium;
+      line-height: 32px;
+      color: rgba(109, 109, 109, 1);
+    }
+
+    &--line {
+      width: 50%;
+      height: 16px;
+      border-bottom: 0.5px solid rgba(109, 109, 109, 1);
+      margin: 0 auto;
+    }
+  }
+}

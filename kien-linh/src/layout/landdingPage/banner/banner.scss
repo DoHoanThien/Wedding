@@ -1,0 +1,64 @@
+.banner {
+  position: relative;
+  height: 100vh;
+  height: 100svh;
+  color: $white;
+  background: center / cover no-repeat
+    url("../../../../public/static/assets/images/banner-mobile.jpg");
+
+  .banner-wrapper {
+    position: absolute;
+    width: 100%;
+    padding: 0 10px;
+    top: 16%;
+  }
+
+  &__content {
+    text-align: left;
+
+    &--title {
+      font-family: "Dancing", Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      font-weight: $font-medium;
+      line-height: 36px;
+    }
+
+    &--name {
+      font-size: 31px;
+      font-weight: $font-medium;
+      line-height: 40px;
+      margin: 20px 0;
+    }
+
+    &--date {
+      text-transform: uppercase;
+      font-family: "Montserrat", Arial, Helvetica, sans-serif;
+      font-weight: $font-medium;
+      line-height: 20px;
+      letter-spacing: 2px;
+      tab-size: 4;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $white;
+    margin: 0 auto;
+    margin-top: 32px;
+    animation: bounce 1s infinite;
+
+    .icon {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: $white;
+      -webkit-mask: url("../../../../public/static/assets/icon/down-double.svg")
+        no-repeat center;
+      mask: url("../../../../public/static/assets/icon/down-double.svg")
+        no-repeat center;
+    }
+  }
+}

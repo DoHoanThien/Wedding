@@ -1,0 +1,32 @@
+.introduction {
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__content {
+    .logo-bg {
+      margin: 0 auto;
+      opacity: 0.6;
+    }
+
+    .speech {
+      font-family: "Nunito", Arial, Helvetica, sans-serif;
+      color: rgba(109, 109, 109, 1);
+      text-align: right;
+      line-height: 20px;
+
+      &__text {
+        margin: 20px 0 16px;
+      }
+    }
+  }
+
+  &__picture {
+    height: 675px;
+    background-color: bisque;
+    border-radius: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}
