@@ -1,7 +1,27 @@
-import React, { memo } from "react";
+import React, { ReactNode } from "react";
+import { Modal } from "reactstrap";
 
-const Album = () => {
-  return <div className="modal-wrapper">modal-wrapper</div>;
+type propTypes = {
+  isShow: boolean;
+  onTogle: () => void;
+  children?: ReactNode;
+  className?: string;
 };
 
-export default memo(Album);
+const ModalWrapper = (props: propTypes) => {
+  const { isShow, onTogle, children, className } = props;
+
+  return (
+    <Modal
+      className={`modal-wrapper ${className}`}
+      centered
+      isOpen={isShow}
+      toggle={onTogle}
+    >
+      <span className="btn btn-close" onClick={onTogle}></span>
+      {children}
+    </Modal>
+  );
+};
+
+export default ModalWrapper;
