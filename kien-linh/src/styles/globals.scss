@@ -26,6 +26,14 @@ body {
   font-weight: $font-regular;
   font-size: $font-size-normal;
   text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    background-image: url("../../public/static/assets/images/banner-intro-mobile.jpg");
+  }
 }
 
 a {
