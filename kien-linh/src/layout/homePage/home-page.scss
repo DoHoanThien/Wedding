@@ -2,7 +2,7 @@
   height: 100vh;
   height: 100svh;
   background: center / cover no-repeat
-    url("../../../public/static/assets/images/home-mobile.jpg");
+    url("../../../public/static/assets/images/banner-open-mobile.jpg");
 
   .container {
     width: 100%;
@@ -11,9 +11,12 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 10% 10px;
+    background-color: rgba(0, 0, 0, 0.1);
   }
 
   &__title {
+    color: $white;
+
     .invitation {
       font-size: $h5-font-size;
       line-height: 28px;

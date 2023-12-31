@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 
 const Banner = () => {
   return (
-    <div className="banner" style={{ position: "relative" }}>
+    <div className="banner">
       <div className="banner-wrapper">
         <div className="banner__content">
           <h6 className="banner__content--title" data-aos="fade-down-left">

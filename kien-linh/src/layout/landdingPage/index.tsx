@@ -16,6 +16,13 @@ const LanddingPage = () => {
       <Album />
       <Other />
 
+      <audio loop autoPlay>
+        <track kind="captions" />
+        <source
+          src="https://invistory.com/wp-content/uploads/2021/09/The-Wedding-of-Handrian-Fransiska-Audio-Invistory-Bikin-Undangan-Digital.mp3"
+          type="audio/mp3"
+        />
+      </audio>
       <section className="special-thanks">Special Thanks</section>
     </div>
   );
