@@ -27,8 +27,10 @@ const Banner = () => {
             <p>nhằm Ngày 25 tháng 12 năm 2023 âm lịch</p>
           </div>
         </div>
-        <div className="banner__button">
-          <Link className="icon" href="#introduction"></Link>
+        <div className="banner__button-wrapper">
+          <div className="banner__button">
+            <Link className="icon" href="#introduction"></Link>
+          </div>
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Playfair", "Montserrat", Arial, Helvetica, sans-serif;
-  color: $black;
+  color: $white;
   font-weight: $font-regular;
   font-size: $font-size-normal;
   text-align: center;
@@ -39,4 +39,16 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }

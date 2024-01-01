@@ -17,19 +17,12 @@
 
     &__item {
       cursor: pointer;
-      height: 250px;
       border-radius: 8px;
-      background-color: bisque;
     }
   }
 
   &__modal {
     .album-slides {
-      .slick-track {
-        height: 300px;
-        background-color: bisque;
-      }
-
       .slick-dots {
         bottom: -28px;
         left: 0;
@@ -66,9 +59,10 @@
         clip-path: inset(0px 24px 0px 24px round 10px);
 
         .slick-slide {
+          height: unset;
+
           > div {
             display: flex;
-            margin: 0 24px;
             position: relative;
           }
 

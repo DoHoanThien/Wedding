@@ -1,6 +1,7 @@
 import React, { memo, useState } from "react";
 import ModalWrapper from "@/components/ModalWrapper";
-import { ALBULM_LST } from "@/config/other";
+import Image from "next/image";
+import { ALBULM_LST_Demo } from "@/config/other";
 import Slider, { Settings } from "react-slick";
 import {
   CustomPaging,
@@ -25,9 +26,19 @@ const AlbumSlides = memo(() => {
 
   return (
     <Slider {...settings} className="album-slides">
-      {ALBULM_LST.map((a, i) => (
+      {ALBULM_LST_Demo.map((a, i) => (
         <div key={i} className="album-slides__item">
-          Hình {a}
+          <Image
+            key={i}
+            className="album__content__item"
+            src={a.src}
+            alt={`album-pic--${i}`}
+            width={0}
+            height={0}
+            priority
+            unoptimized
+            style={{ width: "100%", height: "100%" }}
+          ></Image>
         </div>
       ))}
     </Slider>
@@ -45,16 +56,21 @@ const Album = () => {
     <section className="album">
       <div className="album__title">Album ảnh</div>
       <div className="album__content">
-        {ALBULM_LST.map((a: string, i: number) => {
+        {ALBULM_LST_Demo.map((a, i) => {
           return (
-            <div
+            <Image
               key={i}
               className="album__content__item"
               data-aos="zoom-in"
               onClick={handleTogleModal}
-            >
-              Hình {a}
-            </div>
+              src={a.src}
+              alt={`album-pic--${i}`}
+              width={0}
+              height={0}
+              priority
+              unoptimized
+              style={{ width: "100%", height: "100%" }}
+            ></Image>
           );
         })}
       </div>

@@ -21,16 +21,7 @@ const Introduction = () => {
           <p className="speed-author">- Hiếu Kiên -</p>
         </div>
       </div>
-      <div className="introduction__picture" data-aos="fade-up-left">
-        {/* demo */}
-        <p
-          className="notePicture"
-          style={{ marginTop: "200px", fontSize: "32px", opacity: ".5" }}
-        >
-          Hình 01
-        </p>
-        {/* demo */}
-      </div>
+      <div className="introduction__picture" data-aos="fade-up-left"></div>
       <div className="logo-end"></div>
     </section>
   );

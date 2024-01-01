@@ -19,6 +19,16 @@
       background-color: bisque;
       border-radius: 50%;
       margin-bottom: 10px;
+
+      &.img-one {
+        background: center / cover no-repeat
+          url("../../../../public/static/assets/images/pic/hinh2.png");
+      }
+
+      &.img-two {
+        background: center / cover no-repeat
+          url("../../../../public/static/assets/images/pic/hinh3.png");
+      }
     }
 
     &--name {
