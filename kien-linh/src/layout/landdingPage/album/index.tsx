@@ -1,5 +1,5 @@
 import React, { memo, useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { ALBULM_LST } from "@/config/other";
 import ModalAlbumNoSSR from "./modalAlbum";
 
@@ -26,6 +26,7 @@ const Album = () => {
               width={0}
               height={0}
               unoptimized
+              layout="responsive"
               style={{ width: "100%", height: "100%" }}
             ></Image>
           );
