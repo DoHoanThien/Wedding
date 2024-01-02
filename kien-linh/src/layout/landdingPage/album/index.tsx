@@ -1,5 +1,5 @@
 import React, { memo, useState } from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { ALBULM_LST } from "@/config/other";
 import ModalAlbumNoSSR from "./modalAlbum";
 
