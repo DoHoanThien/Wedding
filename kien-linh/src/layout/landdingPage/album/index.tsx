@@ -25,7 +25,6 @@ const Album = () => {
               alt={`album-pic--${i}`}
               width={0}
               height={0}
-              priority
               unoptimized
               style={{ width: "100%", height: "100%" }}
             ></Image>
