@@ -48,7 +48,6 @@ const ModalAlbum = (props: propTypes) => {
               width={0}
               height={0}
               unoptimized
-              layout="responsive"
               style={{ width: "100%", height: "100%" }}
             ></Image>
           </div>
