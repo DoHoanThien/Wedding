@@ -1,5 +1,4 @@
-const ALBULM_LST = ["05", "06", "07","08","09", "10", "11", "12", "13", "14", "15", "16"]
-const ALBULM_LST_Demo = [
+const ALBULM_LST = [
   {
     src: "/static/assets/images/album/DSC_0353.jpg",
     height: 250
@@ -58,6 +57,5 @@ const ALBULM_LST_Demo = [
 ]
 
 export {
-  ALBULM_LST,
-  ALBULM_LST_Demo
+  ALBULM_LST
 }

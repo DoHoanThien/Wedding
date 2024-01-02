@@ -1,7 +1,7 @@
 import React, { memo, useState } from "react";
-import ModalWrapper from "@/components/ModalWrapper";
+import ModalWrapper from "@/components/ModalWrapper/ModalWrapper";
 import Image from "next/image";
-import { ALBULM_LST_Demo } from "@/config/other";
+import { ALBULM_LST } from "@/config/other";
 import Slider, { Settings } from "react-slick";
 import {
   CustomPaging,
@@ -26,7 +26,7 @@ const AlbumSlides = memo(() => {
 
   return (
     <Slider {...settings} className="album-slides">
-      {ALBULM_LST_Demo.map((a, i) => (
+      {ALBULM_LST.map((a, i) => (
         <div key={i} className="album-slides__item">
           <Image
             key={i}
@@ -56,7 +56,7 @@ const Album = () => {
     <section className="album">
       <div className="album__title">Album ảnh</div>
       <div className="album__content">
-        {ALBULM_LST_Demo.map((a, i) => {
+        {ALBULM_LST.map((a, i) => {
           return (
             <Image
               key={i}
