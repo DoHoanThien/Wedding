@@ -1,49 +1,7 @@
 import React, { memo, useState } from "react";
-import ModalWrapper from "@/components/ModalWrapper/ModalWrapper";
 import Image from "next/image";
 import { ALBULM_LST } from "@/config/other";
-import Slider, { Settings } from "react-slick";
-import {
-  CustomPaging,
-  NextArrow,
-  PrevArrow
-} from "../countdown/countdownSlide";
-
-const AlbumSlides = memo(() => {
-  const settings: Settings = {
-    dots: true,
-    infinite: true,
-    speed: 800,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    useTransform: false,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    customPaging: CustomPaging
-  };
-
-  return (
-    <Slider {...settings} className="album-slides">
-      {ALBULM_LST.map((a, i) => (
-        <div key={i} className="album-slides__item">
-          <Image
-            key={i}
-            className="album__content__item"
-            src={a.src}
-            alt={`album-pic--${i}`}
-            width={0}
-            height={0}
-            priority
-            unoptimized
-            style={{ width: "100%", height: "100%" }}
-          ></Image>
-        </div>
-      ))}
-    </Slider>
-  );
-});
+import ModalAlbumNoSSR from "./modalAlbum";
 
 const Album = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
@@ -76,13 +34,10 @@ const Album = () => {
       </div>
       <div className="logo-end"></div>
 
-      <ModalWrapper
-        className="album__modal"
-        isShow={isOpenModal}
-        onTogle={handleTogleModal}
-      >
-        <AlbumSlides />
-      </ModalWrapper>
+      <ModalAlbumNoSSR
+        isOpenModal={isOpenModal}
+        handleTogleModal={handleTogleModal}
+      />
     </section>
   );
 };
