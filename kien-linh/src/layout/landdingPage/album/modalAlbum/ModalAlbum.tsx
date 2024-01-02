@@ -20,12 +20,12 @@ const ModalAlbum = (props: propTypes) => {
   const settings: Settings = {
     dots: true,
     infinite: true,
-    speed: 800,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     useTransform: false,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     customPaging: CustomPaging
@@ -39,12 +39,10 @@ const ModalAlbum = (props: propTypes) => {
     >
       <Slider {...settings} className="album-slides">
         {ALBULM_LST.map((a, i) => (
-          <div key={i} className="album-slides__item">
+          <div className="album-slides__item" key={`modal-${i}`}>
             <Image
-              key={i}
-              className="album__content__item"
               src={a.src}
-              alt={`album-pic--${i}`}
+              alt={`modal-pic--${i}`}
               width={0}
               height={0}
               unoptimized
