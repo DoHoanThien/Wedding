@@ -1,5 +1,4 @@
 import React, { memo, useState } from "react";
-import Image from "next/image";
 import { ALBULM_LST } from "@/config/other";
 import ModalAlbumNoSSR from "./modalAlbum";
 
@@ -17,16 +16,13 @@ const Album = () => {
         {ALBULM_LST.map((a, i) => {
           return (
             <div className="album__content__item" key={`album-${i}`}>
-              <Image
+              <img
                 data-aos="zoom-in"
                 onClick={handleTogleModal}
                 src={a.src}
                 alt={`album-pic--${i}`}
-                width={0}
-                height={0}
-                unoptimized
                 style={{ width: "100%", height: "100%" }}
-              ></Image>
+              />
             </div>
           );
         })}

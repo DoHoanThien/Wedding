@@ -57,6 +57,7 @@
         "tsx": "never"
       }
     ],
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
     "arrow-body-style": 0,
     "no-continue": 0,
     "@typescript-eslint/no-empty-function": 0,
