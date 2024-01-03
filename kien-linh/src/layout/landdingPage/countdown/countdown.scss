@@ -52,82 +52,11 @@
       line-height: 40px;
     }
 
-    .countdown-clock {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 13px;
-
-      .twodot {
-        transform: translateY(-9px);
-        font-size: $h2-font-size;
-        font-weight: $font-medium;
-
-        &.b-false,
-        &.b-old {
-          opacity: 0.5;
-        }
-      }
-
-      .block-container {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        align-items: center;
-        line-height: 1;
-
-        .b-time {
-          width: 45px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          gap: 1px;
-          font-size: $h2-font-size;
-          line-height: 32px;
-          font-weight: $font-bold;
-          border-radius: 8px;
-          padding: 6px;
-
-          span {
-            display: inline-block;
-          }
-
-          &.b-true {
-            background-size: cover;
-          }
-
-          &.b-false {
-            background-size: cover;
-            opacity: 0.5;
-          }
-
-          &.b-active {
-            background-size: cover;
-          }
-        }
-
-        .time-label {
-          font-size: 12px;
-          font-weight: $font-medium;
-          line-height: 12px;
-          text-transform: uppercase;
-        }
-      }
-    }
-
-    &--button {
-      .icon {
-        -webkit-mask: url("../../../../public/static/assets/icon/date_range.svg")
-          no-repeat center;
-        mask: url("../../../../public/static/assets/icon/date_range.svg")
-          no-repeat center;
-      }
-    }
-
     &--invitation {
       letter-spacing: 1.6px;
       line-height: 24px;
       tab-size: 4;
+      margin-bottom: 0;
     }
   }
 
@@ -135,17 +64,129 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    background-color: rgba(58, 59, 60, 0.51);
-    border-radius: 50px;
-    padding-top: 48px;
 
-    &--day {
-      letter-spacing: 0.8px;
-      line-height: 24px;
-      tab-size: 4;
+    &__groom,
+    &__bride {
+      font-family: "Dancing", Arial, Helvetica, sans-serif;
+      position: relative;
+      background-color: rgba(58, 59, 60, 0.51);
+      border-radius: 50px;
+      padding: 32px 0;
+      overflow: hidden;
+
+      .countdown-clock {
+        font-family: "Playfair", Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+        margin-bottom: 32px;
+
+        .twodot {
+          transform: translateY(-9px);
+          font-size: $h2-font-size;
+          font-weight: $font-medium;
+
+          &.b-false,
+          &.b-old {
+            opacity: 0.5;
+          }
+        }
+
+        .block-container {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          align-items: center;
+          line-height: 1;
+
+          .b-time {
+            width: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1px;
+            font-size: $h2-font-size;
+            line-height: 32px;
+            font-weight: $font-bold;
+            border-radius: 8px;
+            padding: 6px;
+
+            span {
+              display: inline-block;
+            }
+
+            &.b-true {
+              background-size: cover;
+            }
+
+            &.b-false {
+              background-size: cover;
+              opacity: 0.5;
+            }
+
+            &.b-active {
+              background-size: cover;
+            }
+          }
+
+          .time-label {
+            font-size: 12px;
+            font-weight: $font-medium;
+            line-height: 12px;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      > p {
+        margin: 0;
+      }
+
+      .date,
+      .month,
+      .year {
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+
+      .day {
+        font-size: 50px;
+        font-weight: 700;
+      }
+    }
+
+    &__groom {
+      .bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background: center / cover no-repeat
+          url("../../../../public/static/assets/images/flower.png");
+        transform: rotate(180deg);
+      }
+    }
+
+    &__bride {
+      .bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background: center / cover no-repeat
+          url("../../../../public/static/assets/images/flower.png");
+        transform: rotate(180deg);
+      }
     }
 
     &--button {
+      font-family: "Playfair", Arial, Helvetica, sans-serif;
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.5);
       .icon {
         -webkit-mask: url("../../../../public/static/assets/icon/pin_map.svg")
           no-repeat center;

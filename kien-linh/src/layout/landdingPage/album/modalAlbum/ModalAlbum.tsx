@@ -19,11 +19,11 @@ const ModalAlbum = (props: propTypes) => {
   const settings: Settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     customPaging: CustomPaging

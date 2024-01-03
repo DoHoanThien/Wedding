@@ -3,7 +3,7 @@ import React, { memo } from "react";
 const Yourself = () => {
   return (
     <section className="yourself">
-      <div className="yourself__groom" data-aos="zoom-in-left">
+      <div className="yourself__groom" data-aos="zoom-in-right">
         <div className="yourself__groom--image img-one"></div>
         <div className="yourself__groom--name">Kiên</div>
         <div className="yourself__groom--full-name">Lê Hữu Huỳnh Hiếu Kiên</div>
