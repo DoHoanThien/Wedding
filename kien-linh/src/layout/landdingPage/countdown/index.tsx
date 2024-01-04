@@ -11,7 +11,7 @@ const Countdown = () => {
           </h2>
           <p className="countdown__content--invitation">
             Trân trọng kính mời mọi người đến dự tiệc chung vui cùng gia đình
-            chúng tôi Sự hiện diện của quý khách là niềm hạnh phúc của gia đình
+            chúng tôi. Sự hiện diện của quý khách là niềm hạnh phúc của gia đình
             chúng tôi
           </p>
         </div>
@@ -20,8 +20,8 @@ const Countdown = () => {
             className="countdown__address__groom"
             data-aos="zoom-out-right"
           >
-            <CountdownClock endTime={1706958000000} />
-            <p className="date">Thứ 7</p>
+            <CountdownClock endTime={1706952600000} />
+            <p className="date">Nhà Gái, 9:30, Thứ 7</p>
             <p className="day">03</p>
             <p className="month">Tháng Hai</p>
             <p className="year">2024</p>
@@ -29,16 +29,16 @@ const Countdown = () => {
               <span className="icon"></span>
               <span className="text">Chỉ đường</span>
             </button>
-            <div className="bg"></div>
-            <div className="bg"></div>
+            <div className="bg bg-top"></div>
+            <div className="bg bg-bottom"></div>
           </section>
 
           <section
             className="countdown__address__bride"
             data-aos="zoom-out-left"
           >
-            <CountdownClock endTime={1707044400000} />
-            <p className="date">Chủ Nhật</p>
+            <CountdownClock endTime={1707066000000} />
+            <p className="date">Nhà Trai, 17:00, Chủ Nhật</p>
             <p className="day">04</p>
             <p className="month">Tháng Hai</p>
             <p className="year">2024</p>
@@ -46,7 +46,8 @@ const Countdown = () => {
               <span className="icon"></span>
               <span className="text">Chỉ đường</span>
             </button>
-            <div className="bg"></div>
+            <div className="bg bg-top"></div>
+            <div className="bg bg-bottom"></div>
           </section>
 
           {/* <div className="countdown__address--banner" data-aos="flip-left">

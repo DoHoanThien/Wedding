@@ -15,10 +15,10 @@
       padding: 10px 20px;
       margin: 0 auto;
       border: none;
-      border-radius: 4px;
+      border-radius: 12px;
       display: flex;
       flex-wrap: nowrap;
-      gap: 4px;
+      gap: 6px;
       align-items: flex-end;
 
       .icon {
@@ -80,7 +80,7 @@
         justify-content: center;
         align-items: center;
         gap: 13px;
-        margin-bottom: 32px;
+        margin-bottom: 24px;
 
         .twodot {
           transform: translateY(-9px);
@@ -154,31 +154,32 @@
       .day {
         font-size: 50px;
         font-weight: 700;
+
+        span {
+          font-size: 25px;
+        }
       }
     }
 
-    &__groom {
-      .bg {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100px;
-        height: 100px;
-        background: center / cover no-repeat
-          url("../../../../public/static/assets/images/flower.png");
-        transform: rotate(180deg);
-      }
-    }
-
+    &__groom,
     &__bride {
       .bg {
         position: absolute;
-        bottom: 0;
-        left: 0;
         width: 100px;
         height: 100px;
         background: center / cover no-repeat
           url("../../../../public/static/assets/images/flower.png");
+        filter: invert(70%);
+      }
+
+      .bg-top {
+        top: 0;
+        right: 0;
+      }
+
+      .bg-bottom {
+        bottom: 0;
+        left: 0;
         transform: rotate(180deg);
       }
     }
@@ -186,7 +187,7 @@
     &--button {
       font-family: "Playfair", Arial, Helvetica, sans-serif;
       margin-top: 20px;
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.7);
       .icon {
         -webkit-mask: url("../../../../public/static/assets/icon/pin_map.svg")
           no-repeat center;
