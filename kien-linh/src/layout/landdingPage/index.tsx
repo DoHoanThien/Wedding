@@ -5,12 +5,14 @@ import Yourself from "./yourself";
 import Countdown from "./countdown";
 import Album from "./album";
 import Other from "./other";
+// import LoveStory from "./loveStory";
 
 const LanddingPage = () => {
   return (
     <div className="landding-page">
       <Banner />
       <Introduction />
+      {/* <LoveStory /> */}
       <Yourself />
       <Countdown />
       <Album />
