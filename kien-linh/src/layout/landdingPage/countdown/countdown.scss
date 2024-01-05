@@ -152,6 +152,13 @@
         letter-spacing: 1px;
       }
 
+      .address {
+        max-width: 240px;
+        margin: 0 auto;
+        font-size: 18px;
+        padding-top: 8px;
+      }
+
       .day {
         font-size: 50px;
         font-weight: 700;
@@ -166,6 +173,7 @@
     &__bride {
       .bg {
         position: absolute;
+        z-index: -1;
         width: 100px;
         height: 100px;
         background: center / cover no-repeat
@@ -185,28 +193,16 @@
       }
     }
 
-    &--button {
-      font-family: "Playfair", Arial, Helvetica, sans-serif;
-      margin-top: 20px;
-      background-color: rgba(255, 255, 255, 0.7);
-      .icon {
-        -webkit-mask: url("../../../../public/static/assets/icon/pin_map.svg")
-          no-repeat center;
-        mask: url("../../../../public/static/assets/icon/pin_map.svg") no-repeat
-          center;
-      }
-    }
+    // &--banner {
+    //   border-radius: 50px;
+    //   overflow: hidden;
 
-    &--banner {
-      border-radius: 50px;
-      overflow: hidden;
-
-      .image {
-        width: 100%;
-        height: 300px;
-        background: center / cover no-repeat
-          url("../../../../public/static/assets/images/pic/hinh4.jpg");
-      }
-    }
+    //   .image {
+    //     width: 100%;
+    //     height: 300px;
+    //     background: center / cover no-repeat
+    //       url("../../../../public/static/assets/images/pic/hinh4.jpg");
+    //   }
+    // }
   }
 }

@@ -17,23 +17,6 @@ const Countdown = () => {
         </div>
         <div className="countdown__address">
           <section
-            className="countdown__address__groom"
-            data-aos="zoom-out-right"
-          >
-            <CountdownClock endTime={1706952600000} />
-            <p className="date">Nhà Gái, 9:30, Thứ 7</p>
-            <p className="day">03</p>
-            <p className="month">Tháng Hai</p>
-            <p className="year">2024</p>
-            <button className="countdown__address--button">
-              <span className="icon"></span>
-              <span className="text">Chỉ đường</span>
-            </button>
-            <div className="bg bg-top"></div>
-            <div className="bg bg-bottom"></div>
-          </section>
-
-          <section
             className="countdown__address__bride"
             data-aos="zoom-out-left"
           >
@@ -42,17 +25,28 @@ const Countdown = () => {
             <p className="day">04</p>
             <p className="month">Tháng Hai</p>
             <p className="year">2024</p>
-            <button className="countdown__address--button">
-              <span className="icon"></span>
-              <span className="text">Chỉ đường</span>
-            </button>
+            <p className="address">
+              61/12 Võ Tùng, P. Trần Hưng Đạo, TP Quảng Ngãi
+            </p>
             <div className="bg bg-top"></div>
             <div className="bg bg-bottom"></div>
           </section>
 
-          {/* <div className="countdown__address--banner" data-aos="flip-left">
-            <div className="image"></div>
-          </div> */}
+          <section
+            className="countdown__address__groom"
+            data-aos="zoom-out-right"
+          >
+            <CountdownClock endTime={1706952600000} />
+            <p className="date">Nhà Gái, 9:30, Thứ 7</p>
+            <p className="day">03</p>
+            <p className="month">Tháng Hai</p>
+            <p className="year">2024</p>
+            <p className="address">
+              Đường Phạm Văn Đồng, TT Mộ Đức, Mộ Đức, Quảng Ngãi
+            </p>
+            <div className="bg bg-top"></div>
+            <div className="bg bg-bottom"></div>
+          </section>
         </div>
       </div>
     </section>
