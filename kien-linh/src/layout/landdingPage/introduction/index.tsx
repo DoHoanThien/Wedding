@@ -11,14 +11,13 @@ const Introduction = () => {
         </div>
         <div className="speech" data-aos="fade-down-right">
           <p className="speech__text">
-            Lần đầu gặp em anh nghĩ
-            <br />
-            anh đã lựa chọn gặp đúng người,
-            <br /> Nhưng cuộc sống đã cho anh biết
-            <br /> em không phải sự lựa chọn
-            <br /> mà là ưu tiên của cuộc đời anh!
+            Gặp nhau vào một ngày cuối Xuân,
+            <br /> bên nhau Xuân, Hạ, Thu
+            <br /> rồi nên duyên vào một ngày cuối Đông.
+            <br /> Từ nay, Đông có nắng ấm, Hạ có gió mát,
+            <br /> còn chúng mình có nhau.
           </p>
-          <p className="speed-author">- Hiếu Kiên -</p>
+          <p className="speech__author">- Hiếu Kiên - Huyền Linh -</p>
         </div>
       </div>
       <div className="introduction__picture" data-aos="fade-up-left"></div>
