@@ -7,6 +7,9 @@
     color: rgb(109, 109, 109);
     text-transform: uppercase;
     padding-bottom: 20px;
+
+    animation: pulse 2s infinite linear;
+    -webkit-animation: pulse 2s infinite linear;
   }
 
   &__body {
@@ -66,7 +69,6 @@
           width: 20px;
           height: 20px;
           background-color: darkgray;
-          // border: medium solid darkgray;
           -webkit-mask: url("../../../../public/static/assets/icon/heart.svg")
             no-repeat center;
           mask: url("../../../../public/static/assets/icon/heart.svg") no-repeat
@@ -79,16 +81,12 @@
           left: unset;
           right: -20px;
           transform: rotate(180deg);
-          // border-width: 10px 0 10px 10px;
-          // border-color: transparent transparent transparent darkgray;
         }
       }
 
       &__right {
         &::after {
           left: -20px;
-          // border-width: 10px 10px 10px 0;
-          // border-color: transparent darkgray transparent transparent;
         }
       }
     }
@@ -206,8 +204,7 @@
           &::after {
             left: -20px;
             right: unset;
-            // border-width: 10px 10px 10px 0;
-            // border-color: transparent darkgray transparent transparent;
+            transform: rotate(0);
           }
         }
       }

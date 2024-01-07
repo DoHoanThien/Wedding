@@ -16,7 +16,7 @@ const HomePage = (props: propTypes) => {
           data-aos-anchor-placement="top-center"
         >
           <p className="invitation">
-            Trân trọng kính mời đến với buổi tiệc cưới
+            Trân trọng kính mời <br /> đến với buổi tiệc cưới
           </p>
           <h1 className="protagonist-name">Hiếu Kiên & Huyền Linh</h1>
         </div>

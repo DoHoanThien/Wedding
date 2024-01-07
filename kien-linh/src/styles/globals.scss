@@ -34,6 +34,14 @@ body {
     left: -9999px;
     background-image: url("../../public/static/assets/images/banner-intro-mobile.jpg");
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -9999px;
+    right: -9999px;
+    background-image: url("../../public/static/assets/images/pic/hinh1.jpg");
+  }
 }
 
 a {
@@ -81,5 +89,20 @@ a {
   }
   100% {
     -webkit-transform: rotate(0deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.9;
+  }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.9;
   }
 }

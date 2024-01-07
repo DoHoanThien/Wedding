@@ -5,8 +5,9 @@
     font-weight: 600;
     line-height: 32px;
     color: rgba(109, 109, 109, 1);
-
     text-transform: uppercase;
+    animation: pulse 2s infinite linear;
+    -webkit-animation: pulse 2s infinite linear;
   }
 
   &__content {
