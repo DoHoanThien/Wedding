@@ -4,7 +4,7 @@ import Introduction from "./introduction";
 import Yourself from "./yourself";
 import Countdown from "./countdown";
 import Album from "./album";
-import Other from "./other";
+import Comment from "./comment";
 import LoveStory from "./loveStory";
 
 const LanddingPage = () => {
@@ -16,15 +16,16 @@ const LanddingPage = () => {
       <Yourself />
       <Countdown />
       <Album />
-      <Other />
+      <Comment />
 
-      <audio loop autoPlay>
+      {/* <audio loop autoPlay>
         <track kind="captions" />
         <source
           src="https://wedding-alpha-five.vercel.app/audio.mp3"
           type="audio/mp3"
         />
-      </audio>
+      </audio> */}
+
       <section className="special-thanks">
         <div className="image image-left"></div>
         <div className="image image-right"></div>

@@ -4,12 +4,12 @@
 @import "./countdown/countdown.scss";
 @import "./introduction/introduction.scss";
 @import "./loveStory/love-story.scss";
-@import "./other/other.scss";
+@import "./comment/comment.scss";
 @import "./yourself/yourself.scss";
 
 .landding-page {
   > section {
-    padding: 30px 10px;
+    padding: 30px 10px 0;
   }
 
   .logo-end {
