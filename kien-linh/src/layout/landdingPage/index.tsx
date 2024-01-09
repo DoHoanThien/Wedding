@@ -18,7 +18,7 @@ const LanddingPage = () => {
       <Album />
       <Other />
 
-      <audio controls loop autoPlay>
+      <audio loop autoPlay>
         <track kind="captions" />
         <source
           src="https://wedding-alpha-five.vercel.app/audio.mp3"
