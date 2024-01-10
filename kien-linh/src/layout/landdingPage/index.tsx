@@ -18,13 +18,13 @@ const LanddingPage = () => {
       <Album />
       <Comment />
 
-      <audio loop autoPlay>
+      {/* <audio loop autoPlay>
         <track kind="captions" />
         <source
           src="https://wedding-alpha-five.vercel.app/audio.mp3"
           type="audio/mp3"
         />
-      </audio>
+      </audio> */}
 
       <section className="special-thanks">
         <div className="image image-left"></div>
