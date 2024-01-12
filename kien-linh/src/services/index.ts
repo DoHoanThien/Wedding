@@ -1,19 +1,15 @@
+import { isEmpty } from "lodash";
+import { lastKeyType } from "@/layout/landdingPage/comment";
+
 const apiUrl =
   "https://a01krphjoa.execute-api.ap-southeast-1.amazonaws.com/wedding-api";
 
-const getComment = async () => {
-  const res = await fetch(apiUrl)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      return response.json();
-    })
-    .catch((error) => {
-      return error;
-    });
+const getComment = async (lastkey: lastKeyType) => {
+  const res = await fetch(
+    `${apiUrl}?page-size=10${!isEmpty(lastkey) ? `&last-key=${lastkey}` : ""}`
+  );
 
-  return res;
+  return res.json();
 };
 
 const postComment = async (formData: { username: string; text: string }) => {
@@ -23,16 +19,7 @@ const postComment = async (formData: { username: string; text: string }) => {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(formData)
-  })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      return response;
-    })
-    .catch((error) => {
-      return error;
-    });
+  });
 
   return res;
 };
