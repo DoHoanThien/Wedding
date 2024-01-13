@@ -12,6 +12,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { get, isEmpty } from "lodash";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { getComment, postComment } from "@/services";
+import { formatTime } from "@/helpers/ultils";
 
 type formCommentType = {
   name: string;
@@ -21,6 +22,7 @@ type formCommentType = {
 type dataCommentType = {
   username?: string;
   text?: string;
+  createdAt?: number;
 };
 
 export type lastKeyType = string | null;
@@ -116,6 +118,11 @@ const Comment = () => {
               <div key={i} className="comment__res__item">
                 <div className="user-name">{d.username}</div>
                 <div className="content">{d.text}</div>
+                <div className="time">
+                  <span>{formatTime(d.createdAt, "HH:mm")}</span>
+                  <span>{formatTime(d.createdAt, "DD/MM/YY")}</span>
+                </div>
+                <div className="bg"></div>
               </div>
             ))}
           </InfiniteScroll>
