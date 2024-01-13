@@ -27,8 +27,13 @@ const LanddingPage = () => {
       </audio>
 
       <section className="special-thanks">
-        <div className="image image-left"></div>
-        <div className="image image-right"></div>
+        <div className="special-thanks__title">Lời Cảm Ơn</div>
+        <div className="special-thanks__content">
+          Thay mặt hai bên gia đình, Hiếu Kiên & Huyền Linh xin cảm ơn sự có mặt
+          và chúc phúc của quý khách. Chúc quý khách luôn vui vẻ, khoẻ mạnh và
+          thành công trong cuộc sống.
+        </div>
+        <div className="image"></div>
       </section>
     </div>
   );

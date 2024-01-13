@@ -132,4 +132,10 @@
       }
     }
   }
+
+  @media (min-width: 992px) {
+    &__content {
+      gap: 24px;
+    }
+  }
 }

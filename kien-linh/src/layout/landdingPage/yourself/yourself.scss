@@ -74,4 +74,14 @@
       margin: 0 auto;
     }
   }
+
+  @media (min-width: 992px) {
+    &__groom,
+    &__bride {
+      &--image {
+        width: 230px;
+        height: 300px;
+      }
+    }
+  }
 }

@@ -9,7 +9,12 @@
 
 .landding-page {
   > section {
-    padding: 30px 10px 0;
+    padding: 30px 10px;
+    margin: 0 auto;
+
+    &:not(.countdown) {
+      max-width: 1100px;
+    }
   }
 
   .logo-end {
@@ -23,17 +28,39 @@
       no-repeat center;
   }
 
-  // .special-thanks {
-  //   width: 100%;
-  //   display: flex;
-  //   justify-content: space-between;
+  .special-thanks {
+    width: 100%;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  //   .image {
-  //     width: 120px;
-  //     height: 200px;
-  //     background: url("../../../public/static/assets/images/handrwan.png") 100%
-  //       100% no-repeat;
-  //     background-size: contain;
-  //   }
-  // }
+    &__title {
+      font-family: "Cormorant", Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      color: rgb(109, 109, 109);
+      text-transform: uppercase;
+      animation: pulse 2s infinite linear;
+      -webkit-animation: pulse 2s infinite linear;
+    }
+
+    &__content {
+      padding: 20px 0 10px;
+      font-size: 14px;
+      width: 100%;
+      max-width: 768px;
+      bottom: 0;
+      left: 0;
+    }
+
+    .image {
+      width: 350px;
+      height: 45px;
+      background: url("../../../public/static/assets/images/floral-leaf.png")
+        50% 50% no-repeat;
+      background-size: cover;
+    }
+  }
 }

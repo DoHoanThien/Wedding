@@ -11,6 +11,9 @@
 
   &__content,
   &__address {
+    max-width: 1100px;
+    margin: 0 auto;
+
     &--button {
       cursor: pointer;
       padding: 10px 20px;
