@@ -23,7 +23,6 @@ export default function App({ Component, pageProps }: AppProps) {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
         ></meta>
-        <meta name="og:image" content="../../public/hinh4.jpg"></meta>
         <title>Thiệp Mời Hiếu Kiên - Huyền Linh</title>
       </Head>
       <Component {...pageProps} />
