@@ -60,7 +60,8 @@
           max-width: 80%;
           font-size: 16px;
           font-weight: 500;
-          line-height: 30px;
+          line-height: 20px;
+          margin-bottom: 8px;
 
           &::first-letter {
             text-transform: uppercase;
@@ -70,7 +71,7 @@
         .content {
           max-width: 95%;
           font-size: 14px;
-          line-height: 20px;
+          line-height: 18px;
         }
 
         .time {
