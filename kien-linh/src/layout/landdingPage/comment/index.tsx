@@ -76,20 +76,18 @@ const Comment = () => {
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
     if (isSubmit) {
       const formData = {
         username: form.name,
         text: form.comment
       };
-
+      toast.success("Gửi Đi Lời Yêu Thương", {
+        position: toast.POSITION.TOP_RIGHT,
+        icon: <span className="heart-toast"></span>
+      });
       const dataPost = await postComment(formData);
-
       if (dataPost.ok) {
-        toast.success("Gửi Đi Lời Yêu Thương", {
-          position: toast.POSITION.TOP_RIGHT,
-          icon: <span className="heart-toast"></span>
-        });
-
         setDataComment([]);
         initData();
         resetComment();
@@ -162,7 +160,7 @@ const Comment = () => {
           </button>
         </form>
       </div>
-      <ToastContainer autoClose={2000} />
+      <ToastContainer autoClose={5000} />
     </section>
   );
 };
