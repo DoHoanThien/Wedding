@@ -35,4 +35,12 @@
     background: center/cover no-repeat
       url("../../../../public/static/assets/images/pic/hinh1.jpg");
   }
+
+  @media (min-width: 768px) {
+    height: unset;
+
+    &__picture {
+      min-height: 450px;
+    }
+  }
 }
